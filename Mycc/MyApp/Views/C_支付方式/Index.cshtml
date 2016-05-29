@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MyApp.Models.C_支付方式>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.支付宝)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.微信)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NULl)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.支付宝)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.微信)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NULl)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.支付方式id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.支付方式id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.支付方式id })
+        </td>
+    </tr>
+}
+
+</table>

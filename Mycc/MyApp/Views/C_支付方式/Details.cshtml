@@ -1,0 +1,42 @@
+﻿@model MyApp.Models.C_支付方式
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>C_支付方式</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.支付宝)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.支付宝)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.微信)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.微信)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NULl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NULl)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.支付方式id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

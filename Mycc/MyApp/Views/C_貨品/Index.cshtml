@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MyApp.Models.C_貨品>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.貨品Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.價格)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.貨品Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.價格)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.貨品名稱 }) |
+            @Html.ActionLink("Details", "Details", new { id=item.貨品名稱 }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.貨品名稱 })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,74 @@
+﻿@model MyApp.Models.OutM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OutM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.日期)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.日期)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.貨品)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.貨品)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.紙箱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.紙箱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.板費)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.板費)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.快遞)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.快遞)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.輔料)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.輔料)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.其他)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.其他)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
