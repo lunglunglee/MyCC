@@ -39,14 +39,14 @@
     <PublishDatabaseSettings>
       <Objects>
         <ObjectGroup Name="DefaultConnection 部署" Order="1">
-          <Destination Path="" />
+          <Destination Path="Data Source=no-1%3bInitial Catalog=master%3bPersist Security Info=True%3bUser ID=sa%3bPassword=Kwbe6822" />
           <Object Type="DbFullSql">
             <PreSource Path="Data Source=%28LocalDb%29\MSSQLLocalDB%3bAttachDbFilename=|DataDirectory|\aspnet-MyApp-20160529093841.mdf%3bInitial Catalog=aspnet-MyApp-20160529093841%3bIntegrated Security=True" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
             <Source Path="obj\Debug\AutoScripts\DefaultConnection 部署_SchemaOnly.sql" Transacted="True" />
           </Object>
         </ObjectGroup>
         <ObjectGroup Name="TestModel 部署" Order="2">
-          <Destination Path="" />
+          <Destination Path="Data Source=no-1%3bInitial Catalog=TEST1%3bPersist Security Info=True%3bUser ID=sa%3bPassword=Kwbe6822" />
           <Object Type="DbFullSql">
             <PreSource Path="Data Source=no-1%3bInitial Catalog=test1%3bIntegrated Security=True%3bApplication Name=EntityFramework" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
             <Source Path="obj\Debug\AutoScripts\TestModel 部署_SchemaOnly.sql" Transacted="True" />
